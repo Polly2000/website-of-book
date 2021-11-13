@@ -361,6 +361,10 @@ img {
     margin-right: 0px;
   }
 
+  .to-top {
+    display: none;
+  }
+
   .hero-image-block {
     max-width: 390px; /*Размер картинки тоже изменился на 390px*/
     min-width: 390px; /*Т.к. элемент флексовый, необходимо задать минимальное, чтобы картинка не сжималась*/
@@ -658,62 +662,14 @@ img {
   }
 }
 
-@media (max-width: 540px) {
-  .hero-price {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-
-  .pricetag {
-    font-size: 40px;
-    margin-right: 0px;
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .header-container,
   .hero-container,
   .about-container,
   .readers-container,
   .footer-container {
-    width: 95%; /*Такое вот хорошо на смартфонах*/
-  }
-
-  .hero-author {
-    font-size: 16px;
-  }
-
-  .hero-title {
-    font-size: 27px;
-  }
-
-  .hero-subtitle {
-    font-size: 27px;
-  }
-
-  .hero-text {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  .pricetag {
-    max-width: 120px;
-    min-width: 120px;
-    margin-right: 0;
-  }
-
-  .readers-photos {
-    max-width: 400px;
-    min-width: 400px;
-  }
-
-  .reader-photo {
-    max-width: 145px;
-    min-width: 145px;
-    max-height: 145px;
-    min-height: 145px;
-    padding: 10px;
+    width: 90%; /*Такое вот хорошо на смартфонах*/
+    align-items: center;
   }
 
   .photo-5,
@@ -721,122 +677,43 @@ img {
     display: none;
   }
 
-  .about-author {
-    align-items: center;
-  }
-
-  .author-name {
-    margin-top: 10px;
-    margin: auto;
-  }
-
-  .author-bio {
-    padding-top: 10px;
-    margin: 0;
-    text-align: center;
-  }
-
-  .author-avatar {
-    width: 64px;
-    height: 64px;
-    margin: auto;
-  }
-}
-
-@media (max-width: 320px) {
-  .header-container,
-  .hero-container,
-  .about-container,
-  .readers-container,
-  .footer-container {
-    width: 80%;
-  }
-
-  .header-container {
-    margin: 0px;
-  }
-
-  .logo {
-    margin-left: 10px;
-  }
-
-  .login {
-    margin-right: 20px;
-  }
-
-  .about-author {
-    padding: 10px;
-    margin: 10px;
-    overflow: hidden;
-    max-width: 100%;
-    min-width: 100%;
-    max-width: 260px;
-    min-width: 260px;
-  }
-
-  .hero-author {
-    font-size: 16px;
-  }
-
-  .hero-title {
-    font-size: 27px;
-  }
-
-  .hero-subtitle {
-    font-size: 27px;
-  }
-
-  .hero-text {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  .pricetag {
-    max-width: 120px;
-    min-width: 120px;
-    margin-right: 0;
-  }
-
   .readers-photos {
-    max-width: 250px;
-    min-width: 250px;
-    justify-content: space-between;
+    max-width: 100%;
+    min-width: 100%;
     flex-wrap: wrap;
   }
+}
 
-  .reader-photo {
-    max-width: 125px;
-    min-width: 125px;
-    max-height: 125px;
-    min-height: 125px;
-    padding: 10px;
-  }
-
-  .photo-5,
-  .photo-6 {
-    display: none;
-  }
-
+@media (max-width: 445px) {
   .about-author {
-    align-items: center;
-  }
-
-  .author-name {
-    margin-top: 10px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   .author-bio {
     padding: 0;
-    margin: 0;
-    margin-left: 10px;
-    text-align: center;
   }
 
   .author-avatar {
-    width: 64px;
-    height: 64px;
-    margin: auto;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    width: 90%; /*Такое вот хорошо на смартфонах*/
+    align-items: center;
+  }
+
+  .about-author {
+    padding: 22px 0;
+  }
+
+  .author-avatar {
   }
 }
